@@ -4,17 +4,22 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
+import { UserComponent } from './user/user.component';
+import { MessageComponent } from './message/message.component';
+// import { QuitModalComponent } from './quit-modal/quit-modal.component';
+import { ModalModule } from 'ngx-bootstrap';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserComponent,
+    MessageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
